@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6eb73b18-6f5c-4cba-9854-bdb486a55cc0" name="Changes" comment="" />
+    <list default="true" id="6eb73b18-6f5c-4cba-9854-bdb486a55cc0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TicketManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TicketTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TicketTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,7 +55,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TicketTests.testFindAllAnfSort">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TicketTests.testFindAllAnfSortZeroTicket">
     <configuration name="TicketTests.testAddMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TicketSearch" />
       <option name="PACKAGE_NAME" value="" />
@@ -69,8 +81,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicketTests.testFindAllAnfSortOneTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicketSearch" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicketTests" />
+      <option name="METHOD_NAME" value="testFindAllAnfSortOneTicket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTests.testFindAllAnfSortZeroTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicketSearch" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicketTests" />
+      <option name="METHOD_NAME" value="testFindAllAnfSortZeroTicket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicketTests.testFindAllAnfSortZeroTicket" />
+        <item itemvalue="JUnit.TicketTests.testFindAllAnfSortOneTicket" />
         <item itemvalue="JUnit.TicketTests.testFindAllAnfSort" />
         <item itemvalue="JUnit.TicketTests.testAddMethod" />
       </list>

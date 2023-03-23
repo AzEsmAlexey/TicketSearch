@@ -10,7 +10,7 @@ public class TicketManager {
         this.repository = repository;
     }
 
-    public void add (Ticket ticket) {
+    public void add(Ticket ticket) {
         repository.add(ticket);
     }
 

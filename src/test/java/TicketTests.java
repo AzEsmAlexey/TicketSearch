@@ -24,6 +24,7 @@ public class TicketTests {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testAddMethodEmpty() {
         TicketRepository repo = new TicketRepository();
@@ -33,6 +34,7 @@ public class TicketTests {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testRemoveByIdMethod() {
         TicketRepository repo = new TicketRepository();
@@ -46,6 +48,7 @@ public class TicketTests {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testRemoveByIdMethodEmpty() {
         TicketRepository repo = new TicketRepository();
@@ -57,9 +60,10 @@ public class TicketTests {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
 
-    public void testFindAllAnfSort() {
+    public void testFindAllAnfSortSeveralTickets() {
         TicketRepository repo = new TicketRepository();
         TicketManager manager = new TicketManager(repo);
 
@@ -77,5 +81,43 @@ public class TicketTests {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    @Test
 
+    public void testFindAllAnfSortOneTicket() {
+        TicketRepository repo = new TicketRepository();
+        TicketManager manager = new TicketManager(repo);
+
+        manager.add(ticket1);
+        manager.add(ticket2);
+        manager.add(ticket3);
+        manager.add(ticket4);
+        manager.add(ticket5);
+        manager.add(ticket6);
+        manager.add(ticket7);
+
+        Ticket[] actual = manager.findAll("ARS", "AUG");
+        Ticket[] expected = {ticket5};
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+
+    public void testFindAllAnfSortZeroTicket() {
+        TicketRepository repo = new TicketRepository();
+        TicketManager manager = new TicketManager(repo);
+
+        manager.add(ticket1);
+        manager.add(ticket2);
+        manager.add(ticket3);
+        manager.add(ticket4);
+        manager.add(ticket5);
+        manager.add(ticket6);
+        manager.add(ticket7);
+
+        Ticket[] actual = manager.findAll("AUS", "AUG");
+        Ticket[] expected = {};
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }
